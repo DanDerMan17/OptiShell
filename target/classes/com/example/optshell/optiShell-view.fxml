@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<HBox prefHeight="491.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.optshell.OptiShellController">
+    <children>
+        <VBox alignment="TOP_RIGHT" spacing="20.0" style="-fx-background-color: #8ea88f;">
+            <padding>
+                <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+            </padding>
+            <Label prefHeight="94.0" prefWidth="291.0" style="-fx-font-weight: bold;" text="OptiShell" textAlignment="CENTER" textFill="WHITE">
+                <font>
+                    <Font size="65.0" />
+                </font>
+            </Label>
+            <HBox spacing="20.0">
+                <children>
+                    <Label style="-fx-font-weight: bold;" text="Shortcuts" textFill="WHITE">
+                        <font>
+                            <Font size="16.0" />
+                        </font>
+                    </Label>
+                    <Button mnemonicParsing="false" onAction="#handleSystemProperties" style="-fx-background-color: #ece6da;" text="System Properties">
+                        <HBox.margin>
+                            <Insets left="20.0" />
+                        </HBox.margin>
+                    </Button>
+                    <Button mnemonicParsing="false" onAction="#handleHWiNFO" style="-fx-background-color: #ece6da;" text="HWiNFO64" />
+                </children>
+            </HBox>
+            <HBox spacing="20.0">
+                <children>
+                    <Label style="-fx-font-weight: bold;" text="GPU Drivers" textFill="WHITE">
+                        <font>
+                            <Font size="16.0" />
+                        </font>
+                    </Label>
+                    <Button mnemonicParsing="false" onAction="#handleAMD" style="-fx-background-color: #ece6da;" text="AMD">
+                        <HBox.margin>
+                            <Insets left="20.0" />
+                        </HBox.margin>
+                    </Button>
+                    <Button mnemonicParsing="false" onAction="#handleNVIDIA" style="-fx-background-color: #ece6da;" text="NVIDIA" />
+                    <Button mnemonicParsing="false" onAction="#handleIntel" style="-fx-background-color: #ece6da;" text="Intel" />
+                </children>
+            </HBox>
+            <HBox spacing="20.0">
+                <children>
+                    <Label style="-fx-font-weight: bold;" text="Privacy" textFill="WHITE">
+                        <font>
+                            <Font size="16.0" />
+                        </font>
+                    </Label>
+                    <Button mnemonicParsing="false" onAction="#handleStartDebloating" style="-fx-background-color: #ece6da;" text="Start Debloating">
+                        <HBox.margin>
+                            <Insets left="20.0" />
+                        </HBox.margin>
+                    </Button>
+                    <Button mnemonicParsing="false" onAction="#handleUninstallEdge" style="-fx-background-color: #ece6da;" text="Uninstall Edge" />
+                    <Button mnemonicParsing="false" onAction="#handleRemoveCortana" style="-fx-background-color: #ece6da;" text="Remove Cortana" />
+                </children>
+            </HBox>
+            <HBox spacing="20.0">
+                <children>
+                    <Label style="-fx-font-weight: bold;" text="Gaming" textFill="WHITE">
+                        <font>
+                            <Font size="16.0" />
+                        </font>
+                    </Label>
+                    <Button mnemonicParsing="false" onAction="#handleUltimatePowerPlan" style="-fx-background-color: #ece6da;" text="Enable Ultimate Power Plan">
+                        <HBox.margin>
+                            <Insets left="20.0" />
+                        </HBox.margin>
+                    </Button>
+                    <Button mnemonicParsing="false" onAction="#handleStickyKeyshotkey" style="-fx-background-color: #ece6da;" text="Disable Sticky Keys hotkey" />
+                </children>
+            </HBox>
+            <HBox spacing="20.0">
+                <children>
+                    <Label style="-fx-font-weight: bold;" text="Updates" textFill="WHITE">
+                        <font>
+                            <Font size="16.0" />
+                        </font>
+                    </Label>
+                    <Button mnemonicParsing="false" onAction="#handleDisableWindowsUpdates" style="-fx-background-color: #ece6da;" text="Disable Windows Updates">
+                        <HBox.margin>
+                            <Insets left="20.0" />
+                        </HBox.margin>
+                    </Button>
+                    <Button mnemonicParsing="false" onAction="#handleUninstallMCStore" style="-fx-background-color: #ece6da;" text="Uninstall Microsoft Store" />
+                    <Button mnemonicParsing="false" onAction="#handleInstallMCStore" style="-fx-background-color: #ece6da;" text="Install Microsoft Store" />
+                </children>
+            </HBox>
+            <HBox spacing="20.0">
+                <children>
+                    <Label style="-fx-font-weight: bold;" text="Your Infos" textFill="WHITE">
+                        <font>
+                            <Font size="16.0" />
+                        </font>
+                    </Label>
+                    <VBox prefHeight="200.0" prefWidth="100.0" spacing="15.0">
+                        <children>
+                            <Label fx:id="model" style="-fx-font-weight: bold;" text="Model" textFill="WHITE" />
+                            <Label fx:id="cpu" style="-fx-font-weight: bold;" text="CPU" textFill="WHITE" />
+                            <Label fx:id="gpu" style="-fx-font-weight: bold;" text="GPU" textFill="WHITE" />
+                            <Label fx:id="os" style="-fx-font-weight: bold;" text="OS" textFill="WHITE" />
+                        </children>
+                    </VBox>
+                    <Button mnemonicParsing="false" onAction="#handleReboot" style="-fx-background-color: white;" text="Reboot" />
+                    <Button mnemonicParsing="false" onAction="#handlePersonalWebsite" style="-fx-background-color: white;" text="Personal Website" />
+                    <Button mnemonicParsing="false" onAction="#handleDownloadLatestVersion" style="-fx-background-color: white;" text="Download Latest Version" />
+                </children>
+            </HBox>
+        </VBox>
+        <VBox style="-fx-background-color: #8ea88f;">
+            <children>
+                <VBox alignment="TOP_CENTER" spacing="20.0">
+                    <children>
+                        <Label style="-fx-font-weight: bold;" text="Browsers" textFill="WHITE">
+                            <font>
+                                <Font size="16.0" />
+                            </font>
+                            <VBox.margin>
+                                <Insets top="135.0" />
+                            </VBox.margin>
+                        </Label>
+                        <Button mnemonicParsing="false" onAction="#handleBrave" style="-fx-background-color: #ece6da;" text="Brave" />
+                        <Button mnemonicParsing="false" onAction="#HandleFirefox" style="-fx-background-color: #ece6da;" text="Firefox" />
+                        <Button mnemonicParsing="false" onAction="#handleOperaGX" style="-fx-background-color: #ece6da;" text="OperaGX" />
+                        <Label style="-fx-font-weight: bold;" text="Media" textFill="WHITE">
+                            <font>
+                                <Font size="16.0" />
+                            </font>
+                        </Label>
+                        <Button mnemonicParsing="false" onAction="#handleInstallVLC" style="-fx-background-color: #ece6da;" text="Install VLC" />
+                        <Button mnemonicParsing="false" onAction="#handleInstallSpotify" style="-fx-background-color: #ece6da;" text="Install Spotify" />
+                    </children>
+                </VBox>
+            </children>
+        </VBox>
+        <VBox style="-fx-background-color: #8ea88f;">
+            <children>
+                <VBox alignment="TOP_CENTER" spacing="20.0">
+                    <children>
+                        <Label style="-fx-font-weight: bold;" text="Games" textFill="WHITE">
+                            <font>
+                                <Font size="16.0" />
+                            </font>
+                            <VBox.margin>
+                                <Insets top="135.0" />
+                            </VBox.margin>
+                        </Label>
+                        <Button mnemonicParsing="false" onAction="#handleInstallDiscord" style="-fx-background-color: #ece6da;" text="Install Discord" />
+                        <Button mnemonicParsing="false" onAction="#handleInstallEpicGamesLauncher" style="-fx-background-color: #ece6da;" text="Install Epic Games Launcher" />
+                        <Button mnemonicParsing="false" onAction="#handleInstallSteam" style="-fx-background-color: #ece6da;" text="Install steam" />
+                        <Label style="-fx-font-weight: bold;" text="Compression" textFill="WHITE">
+                            <font>
+                                <Font size="16.0" />
+                            </font>
+                        </Label>
+                        <Button mnemonicParsing="false" onAction="#handleInstallWinRAR" style="-fx-background-color: #ece6da;" text="Install WinRAR" />
+                        <Button mnemonicParsing="false" onAction="#handleInstall7zip" style="-fx-background-color: #ece6da;" text="Install 7-Zip" />
+                        <Button mnemonicParsing="false" onAction="#handleInstallBandizip" style="-fx-background-color: #ece6da;" text="Install Bandizip" />
+                    </children>
+                </VBox>
+            </children>
+        </VBox>
+        <VBox style="-fx-background-color: #8ea88f;">
+            <children>
+                <HBox>
+                    <children>
+                        <VBox alignment="TOP_CENTER" spacing="20.0">
+                            <children>
+                                <Label style="-fx-font-weight: bold;" text="Developer Tools" textFill="WHITE">
+                                    <font>
+                                        <Font size="16.0" />
+                                    </font>
+                                    <VBox.margin>
+                                        <Insets top="135.0" />
+                                    </VBox.margin>
+                                </Label>
+                                <Button mnemonicParsing="false" onAction="#handleInstallVsCode" style="-fx-background-color: #ece6da;" text="Install VsCode" />
+                                <Button mnemonicParsing="false" onAction="#handleInstallWSL" style="-fx-background-color: #ece6da;" text="Install WSL" />
+                                <Button mnemonicParsing="false" onAction="#handleInstallVMware17" style="-fx-background-color: #ece6da;" text="Install VMware17" />
+                                <Button mnemonicParsing="false" onAction="#handleFileZilla" style="-fx-background-color: #ece6da;" text="Install FileZilla" />
+                                <Button mnemonicParsing="false" onAction="#handleInstallGit" style="-fx-background-color: #ece6da;" text="Install Git" />
+                                <Button mnemonicParsing="false" onAction="#handleInstallIntelliJ" style="-fx-background-color: #ece6da;" text="Install IntelliJ" />
+                                <Label text="OptiShell 1.0" textFill="WHITE" />
+                            </children>
+                            <HBox.margin>
+                                <Insets right="20.0" />
+                            </HBox.margin>
+                        </VBox>
+                    </children>
+                </HBox>
+            </children>
+        </VBox>
+    </children>
+</HBox>
